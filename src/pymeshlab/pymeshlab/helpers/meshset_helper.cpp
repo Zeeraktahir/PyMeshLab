@@ -605,7 +605,7 @@ class OpenGLContextData
 public:
 	OpenGLContextData(MeshSet& ms, int argc, char** argv) :
 			app(argc, argv),
-			gpumeminfo((std::ptrdiff_t)(350 * (float) (1024 * 1024))),
+			gpumeminfo((std::ptrdiff_t)(3500 * (float) (1024 * 1024))),
 			sceneGLSharedDataContext(ms, gpumeminfo, true, 100000, 100000),
 			wid(nullptr, &sceneGLSharedDataContext)
 	{
